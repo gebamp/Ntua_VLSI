@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "shift_register_tb_behav" --prj "C:/Users/Superminiala/Documents/VLSI/Lab_1/B_2/B_2.sim/sim_1/behav/shift_register_tb.prj" "xil_defaultlib.shift_register_tb" 

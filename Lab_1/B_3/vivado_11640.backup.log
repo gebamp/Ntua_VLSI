@@ -1,0 +1,884 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Mar 09 23:07:18 2020
+# Process ID: 6488
+# Log file: C:/Users/Panos/Desktop/Lab_1/B_3/vivado.log
+# Journal file: C:/Users/Panos/Desktop/Lab_1/B_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Panos\Desktop\Lab_1\B_3\B_3.xpr}
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 805.785 ; gain = 6.996
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd
+update_compile_order -fileset sim_1
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Down_Counter_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Down_Counter_tb.prj   xil_defaultlib.Up_Down_Counter_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Down_Counter_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Down_Counter_tb.prj xil_defaultlib.Up_Down_Counter_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/Up_Down_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/Up_Down_Counter_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Down_Counter [up_down_counter_default]
+Compiling architecture test_bench of entity xil_defaultlib.up_down_counter_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Down_Counter_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Down_Counter_tb_behav -key {Behavioral:sim_1:Functional:Up_Down_Counter_tb} -tclbatch {Up_Down_Counter_tb.tcl} -log {Up_Down_Counter_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /Up_Down_Counter_tb/UUT/line__65  File: C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/Up_Down_Counter.vhd
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 869.480 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Down_Counter_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 869.480 ; gain = 0.000
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Down_Counter_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Down_Counter_tb.prj   xil_defaultlib.Up_Down_Counter_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Down_Counter_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Down_Counter_tb.prj xil_defaultlib.Up_Down_Counter_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/Up_Down_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/Up_Down_Counter_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Down_Counter [up_down_counter_default]
+Compiling architecture test_bench of entity xil_defaultlib.up_down_counter_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Down_Counter_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Down_Counter_tb_behav -key {Behavioral:sim_1:Functional:Up_Down_Counter_tb} -tclbatch {Up_Down_Counter_tb.tcl} -log {Up_Down_Counter_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /Up_Down_Counter_tb/UUT/line__65  File: C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/Up_Down_Counter.vhd
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 869.480 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Down_Counter_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 869.480 ; gain = 0.000
+set_property top Up_Counter_With_Upper_Limit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/Up_Down_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-91] up_down_counter is not declared [C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd:64]
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd:81]
+ERROR: [VRFC 10-1504] unit test_bench ignored due to previous errors [C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd:37]
+INFO: [VRFC 10-240] VHDL file C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+set_property top Up_Counter_With_Upper_Limit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 869.480 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 869.480 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 921.426 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 921.426 ; gain = 0.000
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 921.426 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 921.426 ; gain = 0.000
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 921.426 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 921.426 ; gain = 0.000
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+set_property top Up_Counter_With_Upper_Limit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top Up_Counter_With_Upper_Limit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 923.797 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'up_counter_with_upper_limit_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj   xil_defaultlib.Up_Counter_With_Upper_Limit"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit.prj xil_defaultlib.Up_Counter_With_Upper_Limit 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.up_counter_with_upper_limit
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit} -tclbatch {Up_Counter_With_Upper_Limit.tcl} -log {Up_Counter_With_Upper_Limit_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 923.797 ; gain = 0.000
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+set_property top Up_Counter_With_Upper_Limit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Counter_With_Upper_Limit [up_counter_with_upper_limit_defa...]
+Compiling architecture test_bench of entity xil_defaultlib.up_counter_with_upper_limit_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_tb_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit_tb} -tclbatch {Up_Counter_With_Upper_Limit_tb.tcl} -log {Up_Counter_With_Upper_Limit_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 923.797 ; gain = 0.000
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Counter_With_Upper_Limit [up_counter_with_upper_limit_defa...]
+Compiling architecture test_bench of entity xil_defaultlib.up_counter_with_upper_limit_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_tb_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit_tb} -tclbatch {Up_Counter_With_Upper_Limit_tb.tcl} -log {Up_Counter_With_Upper_Limit_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 959.930 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-91] restn is not declared [C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd:91]
+ERROR: [VRFC 10-91] restn is not declared [C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd:94]
+ERROR: [VRFC 10-1504] unit test_bench ignored due to previous errors [C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd:37]
+INFO: [VRFC 10-240] VHDL file C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Counter_With_Upper_Limit [up_counter_with_upper_limit_defa...]
+Compiling architecture test_bench of entity xil_defaultlib.up_counter_with_upper_limit_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_tb_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit_tb} -tclbatch {Up_Counter_With_Upper_Limit_tb.tcl} -log {Up_Counter_With_Upper_Limit_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 959.930 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 959.930 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Counter_With_Upper_Limit [up_counter_with_upper_limit_defa...]
+Compiling architecture test_bench of entity xil_defaultlib.up_counter_with_upper_limit_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_tb_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit_tb} -tclbatch {Up_Counter_With_Upper_Limit_tb.tcl} -log {Up_Counter_With_Upper_Limit_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 973.867 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 973.867 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Counter_With_Upper_Limit [up_counter_with_upper_limit_defa...]
+Compiling architecture test_bench of entity xil_defaultlib.up_counter_with_upper_limit_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_tb_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit_tb} -tclbatch {Up_Counter_With_Upper_Limit_tb.tcl} -log {Up_Counter_With_Upper_Limit_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 973.867 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 973.867 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-5] Copied auxiliary file 'Up_Down_Counter_tb.vhd' to 'C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav'
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj   xil_defaultlib.Up_Counter_With_Upper_Limit_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot Up_Counter_With_Upper_Limit_tb_behav --prj C:/Users/Panos/Desktop/Lab_1/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj xil_defaultlib.Up_Counter_With_Upper_Limit_tb 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sources_1/new/up_counter_with_upper_limit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Panos/Desktop/Lab_1/B_3/B_3.srcs/sim_1/new/up_counter_with_upper_limit_tb.vhd" into library xil_defaultlib
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Up_Counter_With_Upper_Limit [up_counter_with_upper_limit_defa...]
+Compiling architecture test_bench of entity xil_defaultlib.up_counter_with_upper_limit_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Up_Counter_With_Upper_Limit_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "Up_Counter_With_Upper_Limit_tb_behav -key {Behavioral:sim_1:Functional:Up_Counter_With_Upper_Limit_tb} -tclbatch {Up_Counter_With_Upper_Limit_tb.tcl} -log {Up_Counter_With_Upper_Limit_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 973.867 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'Up_Counter_With_Upper_Limit_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 973.867 ; gain = 0.000
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 10 01:10:30 2020...

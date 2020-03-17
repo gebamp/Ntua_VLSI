@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Mar 17 12:45:16 2020
+# Process ID: 12228
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_1/A_2/vivado.log
+# Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_1/A_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Superminiala\Documents\VLSI\Lab_1\A_2\A_2.xpr}
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 5 ps
+run 5 ps
+run 5 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top_arch dec_data [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+close_sim

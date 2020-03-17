@@ -1,0 +1,5 @@
+Running: xsim.dir/decoder_dec_behav_tb_behav/xsimk.exe -simmode gui -wdb decoder_dec_behav_tb_behav.wdb -simrunnum 0 -socket 50809
+Design successfully loaded
+Design Loading CPU Usage: 234 ms
+Simulation completed
+Simulation CPU Usage: 311 ms

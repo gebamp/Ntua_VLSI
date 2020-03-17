@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Mar 16 22:56:32 2020
+# Process ID: 5292
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_1/A_2/vivado.log
+# Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_1/A_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Superminiala\Documents\VLSI\Lab_1\A_2\A_2.xpr}
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 5 ps
+run 5 ps
+run 5 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+close_sim
+close_project
+open_project C:/Users/Superminiala/Documents/VLSI/Lab_1/B_2/B_2.xpr
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+launch_xsim -simset sim_1 -mode behavioral
+close_sim

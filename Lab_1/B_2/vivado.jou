@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Mar 17 12:49:34 2020
+# Process ID: 9912
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_1/B_2/vivado.log
+# Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_1/B_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Superminiala\Documents\VLSI\Lab_1\B_2\B_2.xpr}
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top shift_register_tb [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 10 ps
+restart
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+restart
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+restart
+launch_xsim -simset sim_1 -mode behavioral
+restart
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+run 5 ps
+close_sim

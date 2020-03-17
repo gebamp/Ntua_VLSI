@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "Up_Counter_With_Upper_Limit_tb_behav" --prj "C:/Users/Superminiala/Downloads/B_3/B_3.sim/sim_1/behav/Up_Counter_With_Upper_Limit_tb.prj" "xil_defaultlib.Up_Counter_With_Upper_Limit_tb" 

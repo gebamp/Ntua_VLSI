@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1584392769">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="shift_register_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="shift_register_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="shift_register_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="shift_register.tcl"/>
+  <File Type="OPT-DCP" Name="shift_register_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="shift_register_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="shift_register_placed.dcp"/>
+  <File Type="PLACE-IO" Name="shift_register_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="shift_register_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="shift_register_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="shift_register_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="shift_register_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="shift_register_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="shift_register_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="shift_register_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="shift_register_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="shift_register_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="shift_register_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="shift_register_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="shift_register_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="shift_register_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="shift_register_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="shift_register_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="shift_register_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="shift_register_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="shift_register_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="shift_register_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="shift_register_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="shift_register.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="shift_register_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="shift_register.bit"/>
+  <File Type="BG-BIN" Name="shift_register.bin"/>
+  <File Type="BITSTR-MSK" Name="shift_register.msk"/>
+  <File Type="BITSTR-RBT" Name="shift_register.rbt"/>
+  <File Type="BITSTR-NKY" Name="shift_register.nky"/>
+  <File Type="BITSTR-BMM" Name="shift_register_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="shift_register.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="shift_register.sysdef"/>
+  <File Type="BG-BGN" Name="shift_register.bgn"/>
+  <File Type="BG-DRC" Name="shift_register.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
