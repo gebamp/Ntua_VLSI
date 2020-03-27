@@ -22,21 +22,21 @@ signal temp_Cout: STD_LOGIC;
 
 component HA_seq is
     port(
-        a: in STD_LOGIC;
-        b: in STD_LOGIC;
-        c: out STD_LOGIC;
-        s: out STD_LOGIC;
+        a_ha: in STD_LOGIC;
+        b_ha: in STD_LOGIC;
+        c_ha: out STD_LOGIC;
+        s_ha: out STD_LOGIC;
         ha_clk: in STD_LOGIC;
         ha_reset: in STD_LOGIC
         );
 end component;
 component OR_GATE_seq is
     port(
-        a: in STD_LOGIC;
-        b: in STD_LOGIC;
-        o: out STD_LOGIC;
-        or_gate_clk: in STD_LOGIC;
-        or_gate_reset: in STD_LOGIC
+        a_or: in STD_LOGIC;
+        b_or: in STD_LOGIC;
+        o_or: out STD_LOGIC;
+        or_clk: in STD_LOGIC;
+        or_reset: in STD_LOGIC
         )
         ;
 end component;
