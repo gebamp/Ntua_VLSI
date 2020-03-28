@@ -21,15 +21,15 @@ signal c_in_temp : std_logic_vector(1 downto 0);
 begin
         process(clk)
             begin
+                a_temp<= '0'& a;
+                b_temp<= '0'& b;
+                c_in_temp<= '0'& c_in;
+                addition_vector<= a_temp + b_temp + c_in_temp;   
                 if(rising_edge(CLK)) then
                     if(RST='1') then
                         C_out<='0';
                         SUM<='0';
                     else
-                        a_temp<= '0'& a;
-                        b_temp<= '0'& b;
-                        c_in_temp<= '0'& c_in;
-                        addition_vector<= a_temp + b_temp + c_in_temp;
                         SUM <= addition_vector(0);
                         C_out <= addition_vector(1);  
                 end if;  
