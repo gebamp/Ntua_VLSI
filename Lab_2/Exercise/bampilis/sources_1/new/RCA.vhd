@@ -19,6 +19,7 @@ component FA_comb is
         );
 end component;
 signal c: STD_LOGIC_VECTOR(2 downto 0);
+
 begin
 
 fa_1 : FA_comb

@@ -37,14 +37,14 @@ signal first_carry: std_logic;
 signal first_and: std_logic;
 signal second_and : std_logic;
 signal temp_cout : std_logic;
-signal zero : std_logic;
+signal zero: std_logic;
 begin
-zero <='0';
+zero <= '0';
 RCA_1 :  RCA
            port map(
            X=>A,
            Y=>B,
-           RCA_CIN => BCD_CIN,
+           RCA_CIN => BCD_cin,
            s => first_addition,
            RCA_Cout => first_carry                
            );  
