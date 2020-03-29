@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1585483355">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="FA_comb_beh_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="FA_comb_beh_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FA_comb_beh_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="FA_comb_beh.tcl"/>
+  <File Type="OPT-DCP" Name="FA_comb_beh_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FA_comb_beh_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FA_comb_beh_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FA_comb_beh_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FA_comb_beh_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FA_comb_beh_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FA_comb_beh_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FA_comb_beh_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FA_comb_beh_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FA_comb_beh_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FA_comb_beh_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="FA_comb_beh_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FA_comb_beh_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="FA_comb_beh_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="FA_comb_beh_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FA_comb_beh_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="FA_comb_beh_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="FA_comb_beh_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="FA_comb_beh_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FA_comb_beh_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FA_comb_beh_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="FA_comb_beh_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FA_comb_beh_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FA_comb_beh_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="FA_comb_beh.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FA_comb_beh_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="FA_comb_beh.bit"/>
+  <File Type="BG-BIN" Name="FA_comb_beh.bin"/>
+  <File Type="BITSTR-MSK" Name="FA_comb_beh.msk"/>
+  <File Type="BITSTR-RBT" Name="FA_comb_beh.rbt"/>
+  <File Type="BITSTR-NKY" Name="FA_comb_beh.nky"/>
+  <File Type="BITSTR-BMM" Name="FA_comb_beh_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="FA_comb_beh.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="FA_comb_beh.sysdef"/>
+  <File Type="BG-BGN" Name="FA_comb_beh.bgn"/>
+  <File Type="BG-DRC" Name="FA_comb_beh.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
