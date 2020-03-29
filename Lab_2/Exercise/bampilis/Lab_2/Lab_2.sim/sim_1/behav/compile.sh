@@ -32,4 +32,4 @@ ExecStep()
    fi
 }
 
-ExecStep xelab -m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot BCD_PA_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.sim/sim_1/behav/BCD_PA_tb.prj   xil_defaultlib.BCD_PA_tb
+ExecStep xelab -m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot RCA_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.sim/sim_1/behav/RCA_pipe_tb.prj   xil_defaultlib.RCA_pipe_tb

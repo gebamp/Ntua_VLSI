@@ -1,0 +1,5 @@
+Running: xsim.dir/RCA_pipe_tb_behav/xsimk.exe -simmode gui -wdb RCA_pipe_tb_behav.wdb -simrunnum 0 -socket 53816
+Design successfully loaded
+Design Loading CPU Usage: 156 ms
+Simulation completed
+Simulation CPU Usage: 265 ms
