@@ -1,5 +1,0 @@
-Running: xsim.dir/BCD_PA_tb_behav/xsimk.exe -simmode gui -wdb BCD_PA_tb_behav.wdb -simrunnum 0 -socket 52212
-Design successfully loaded
-Design Loading CPU Usage: 280 ms
-Simulation completed
-Simulation CPU Usage: 6796 ms

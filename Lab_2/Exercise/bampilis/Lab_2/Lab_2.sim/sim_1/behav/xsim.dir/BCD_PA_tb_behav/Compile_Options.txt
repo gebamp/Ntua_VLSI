@@ -1,1 +1,0 @@
---debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "BCD_PA_tb_behav" --prj "C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.sim/sim_1/behav/BCD_PA_tb.prj" "xil_defaultlib.BCD_PA_tb" 

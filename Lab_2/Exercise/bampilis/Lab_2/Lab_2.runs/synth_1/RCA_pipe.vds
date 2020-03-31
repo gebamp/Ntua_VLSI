@@ -1,13 +1,12 @@
-
-*** Running vivado
-    with args -log RCA_pipe.vds -m64 -mode batch -messageDb vivado.pb -source RCA_pipe.tcl
-
-
-****** Vivado v2014.2 (64-bit)
-  **** SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
-  **** IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Mar 31 14:29:27 2020
+# Process ID: 14868
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.runs/synth_1/RCA_pipe.vds
+# Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
 source RCA_pipe.tcl
 # set_param gui.test TreeTableDev
 # set_msg_config -id {HDL 9-1061} -limit 100000

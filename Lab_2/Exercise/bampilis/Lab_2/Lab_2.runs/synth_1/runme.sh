@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log FA_comb_beh.vds -m64 -mode batch -messageDb vivado.pb -source FA_comb_beh.tcl
+EAStep vivado -log RCA_pipe.vds -m64 -mode batch -messageDb vivado.pb -source RCA_pipe.tcl
