@@ -1,0 +1,341 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Mar 31 21:38:40 2020
+# Process ID: 4156
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.runs/synth_1/mul_pipe.vds
+# Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mul_pipe.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7z010clg400-1
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+# set_property target_language VHDL [current_project]
+# set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/OR_GATE.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/HA.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_comb.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/three_way_or.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/RCA.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq_beh.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_COMB_behav.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/AND_GATE.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_ADDER.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/RCA_pipe.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd
+#   C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd
+# }
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.cache/wt [current_project]
+# set_property parent.project_dir C:/Users/Superminiala/Documents/VLSI/Lab_2 [current_project]
+# catch { write_hwdef -file mul_pipe.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top mul_pipe -part xc7z010clg400-1
+Command: synth_design -top mul_pipe -part xc7z010clg400-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 222.457 ; gain = 92.473
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port y is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_ADDER.vhd:73]
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:29]
+WARNING: [Synth 8-1565] actual for formal port b is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:30]
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:37]
+WARNING: [Synth 8-1565] actual for formal port b is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:38]
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:45]
+WARNING: [Synth 8-1565] actual for formal port b is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:46]
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:54]
+WARNING: [Synth 8-1565] actual for formal port b is neither a static name nor a globally static expression [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/BCD_PA.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'mul_pipe' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:27]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:16]
+INFO: [Synth 8-3491] module 'FA_seq' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq.vhd:4' bound to instance 'fa1' of component 'fa_seq' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'FA_seq' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq.vhd:14]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/HA.vhd:3' bound to instance 'ha_1' of component 'HA' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/HA.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'HA' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/HA.vhd:11]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/HA.vhd:3' bound to instance 'ha_2' of component 'HA' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'FA_seq' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/FA_seq.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'full_adder_star' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:16]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:155]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas3_1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:165]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas3_2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:175]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas4_1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:185]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas4_2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:195]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas5_1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:205]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas5_2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:215]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas6_1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:225]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas6_2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:235]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas7_1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:245]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas7_2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:255]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas8_1' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:265]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas8_2' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:275]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas9' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:285]
+INFO: [Synth 8-3491] module 'full_adder_star' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/full_adder_star.vhd:4' bound to instance 'fas10' of component 'full_adder_star' [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:295]
+INFO: [Synth 8-256] done synthesizing module 'mul_pipe' (4#1) [C:/Users/Superminiala/Documents/VLSI/Lab_2/Lab_2.srcs/sources_1/new/mul_pipe.vhd:27]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 254.438 ; gain = 124.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 254.438 ; gain = 124.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 254.438 ; gain = 124.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
++---Registers : 
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 39    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mul_pipe 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module FA_seq 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module full_adder_star 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/zynq/IOStandards.xml
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 403.027 ; gain = 273.043
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 403.027 ; gain = 273.043
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 403.027 ; gain = 273.043
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 412.719 ; gain = 282.734
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 412.719 ; gain = 282.734
+Finished Parallel Section  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 412.719 ; gain = 282.734
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 412.719 ; gain = 282.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 412.785 ; gain = 282.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 412.785 ; gain = 282.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 412.785 ; gain = 282.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 412.785 ; gain = 282.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mul_pipe    | out10_reg[3] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mul_pipe    | out10_reg[2] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mul_pipe    | out10_reg[1] | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mul_pipe    | out10_reg[0] | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mul_pipe    | reg3a_reg[3] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|mul_pipe    | reg4b_reg[1] | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|mul_pipe    | reg6b_reg[1] | 7      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+--------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT4   |    32|
+|3     |SRL16E |     7|
+|4     |FDRE   |    94|
+|5     |IBUF   |    15|
+|6     |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------------+------+
+|      |Instance |Module             |Cells |
++------+---------+-------------------+------+
+|1     |top      |                   |   157|
+|2     |  fas1   |full_adder_star    |     6|
+|3     |    fa1  |FA_seq_29          |     6|
+|4     |  fas10  |full_adder_star_0  |     2|
+|5     |    fa1  |FA_seq_28          |     2|
+|6     |  fas2   |full_adder_star_1  |     6|
+|7     |    fa1  |FA_seq_27          |     6|
+|8     |  fas3_1 |full_adder_star_2  |     5|
+|9     |    fa1  |FA_seq_26          |     5|
+|10    |  fas3_2 |full_adder_star_3  |     3|
+|11    |    fa1  |FA_seq_25          |     3|
+|12    |  fas4_1 |full_adder_star_4  |     3|
+|13    |    fa1  |FA_seq_24          |     3|
+|14    |  fas4_2 |full_adder_star_5  |     5|
+|15    |    fa1  |FA_seq_23          |     5|
+|16    |  fas5_1 |full_adder_star_6  |     5|
+|17    |    fa1  |FA_seq_22          |     5|
+|18    |  fas5_2 |full_adder_star_7  |     3|
+|19    |    fa1  |FA_seq_21          |     3|
+|20    |  fas6_1 |full_adder_star_8  |     3|
+|21    |    fa1  |FA_seq_20          |     3|
+|22    |  fas6_2 |full_adder_star_9  |     5|
+|23    |    fa1  |FA_seq_19          |     5|
+|24    |  fas7_1 |full_adder_star_10 |     5|
+|25    |    fa1  |FA_seq_18          |     5|
+|26    |  fas7_2 |full_adder_star_11 |     3|
+|27    |    fa1  |FA_seq_17          |     3|
+|28    |  fas8_1 |full_adder_star_12 |     3|
+|29    |    fa1  |FA_seq_16          |     3|
+|30    |  fas8_2 |full_adder_star_13 |     3|
+|31    |    fa1  |FA_seq_15          |     3|
+|32    |  fas9   |full_adder_star_14 |     4|
+|33    |    fa1  |FA_seq             |     4|
++------+---------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 412.785 ; gain = 282.801
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 412.785 ; gain = 282.801
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 474.781 ; gain = 302.469
+# write_checkpoint mul_pipe.dcp
+# report_utilization -file mul_pipe_utilization_synth.rpt -pb mul_pipe_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 474.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 21:38:53 2020...
