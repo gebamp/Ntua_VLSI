@@ -1,0 +1,340 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Thu Apr 23 14:28:47 2020
+| Host         : DESKTOP-4M9UVAB running 64-bit major release  (build 9200)
+| Command      : report_drc
+-----------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+           Max violations: <unlimited>
+         Violations found: 61
+
+2. REPORT DETAILS
+-----------------
+MDRV-1#1 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][0] has multiple drivers: RAM_reg[1][0]/Q, RAM_reg[1][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#2 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][1] has multiple drivers: RAM_reg[1][1]/Q, RAM_reg[1][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#3 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][2] has multiple drivers: RAM_reg[1][2]/Q, RAM_reg[1][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#4 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][3] has multiple drivers: RAM_reg[1][3]/Q, RAM_reg[1][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#5 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][4] has multiple drivers: RAM_reg[1][4]/Q, RAM_reg[1][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#6 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][5] has multiple drivers: RAM_reg[1][5]/Q, RAM_reg[1][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#7 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][6] has multiple drivers: RAM_reg[1][6]/Q, RAM_reg[1][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#8 Critical Warning
+Multiple Driver Nets  
+Net RAM[1][7] has multiple drivers: RAM_reg[1][7]/Q, RAM_reg[1][7]__0/Q.
+Related violations: <none>
+
+MDRV-1#9 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][0] has multiple drivers: RAM_reg[2][0]/Q, RAM_reg[2][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#10 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][1] has multiple drivers: RAM_reg[2][1]/Q, RAM_reg[2][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#11 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][2] has multiple drivers: RAM_reg[2][2]/Q, RAM_reg[2][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#12 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][3] has multiple drivers: RAM_reg[2][3]/Q, RAM_reg[2][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#13 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][4] has multiple drivers: RAM_reg[2][4]/Q, RAM_reg[2][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#14 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][5] has multiple drivers: RAM_reg[2][5]/Q, RAM_reg[2][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#15 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][6] has multiple drivers: RAM_reg[2][6]/Q, RAM_reg[2][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#16 Critical Warning
+Multiple Driver Nets  
+Net RAM[2][7] has multiple drivers: RAM_reg[2][7]/Q, RAM_reg[2][7]__0/Q.
+Related violations: <none>
+
+MDRV-1#17 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][0] has multiple drivers: RAM_reg[3][0]/Q, RAM_reg[3][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#18 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][1] has multiple drivers: RAM_reg[3][1]/Q, RAM_reg[3][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#19 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][2] has multiple drivers: RAM_reg[3][2]/Q, RAM_reg[3][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#20 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][3] has multiple drivers: RAM_reg[3][3]/Q, RAM_reg[3][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#21 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][4] has multiple drivers: RAM_reg[3][4]/Q, RAM_reg[3][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#22 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][5] has multiple drivers: RAM_reg[3][5]/Q, RAM_reg[3][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#23 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][6] has multiple drivers: RAM_reg[3][6]/Q, RAM_reg[3][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#24 Critical Warning
+Multiple Driver Nets  
+Net RAM[3][7] has multiple drivers: RAM_reg[3][7]/Q, RAM_reg[3][7]__0/Q.
+Related violations: <none>
+
+MDRV-1#25 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][0] has multiple drivers: RAM_reg[4][0]/Q, RAM_reg[4][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#26 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][1] has multiple drivers: RAM_reg[4][1]/Q, RAM_reg[4][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#27 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][2] has multiple drivers: RAM_reg[4][2]/Q, RAM_reg[4][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#28 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][3] has multiple drivers: RAM_reg[4][3]/Q, RAM_reg[4][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#29 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][4] has multiple drivers: RAM_reg[4][4]/Q, RAM_reg[4][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#30 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][5] has multiple drivers: RAM_reg[4][5]/Q, RAM_reg[4][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#31 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][6] has multiple drivers: RAM_reg[4][6]/Q, RAM_reg[4][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#32 Critical Warning
+Multiple Driver Nets  
+Net RAM[4][7] has multiple drivers: RAM_reg[4][7]/Q, RAM_reg[4][7]__0/Q.
+Related violations: <none>
+
+MDRV-1#33 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][0] has multiple drivers: RAM_reg[5][0]/Q, RAM_reg[5][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#34 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][1] has multiple drivers: RAM_reg[5][1]/Q, RAM_reg[5][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#35 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][2] has multiple drivers: RAM_reg[5][2]/Q, RAM_reg[5][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#36 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][3] has multiple drivers: RAM_reg[5][3]/Q, RAM_reg[5][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#37 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][4] has multiple drivers: RAM_reg[5][4]/Q, RAM_reg[5][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#38 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][5] has multiple drivers: RAM_reg[5][5]/Q, RAM_reg[5][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#39 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][6] has multiple drivers: RAM_reg[5][6]/Q, RAM_reg[5][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#40 Critical Warning
+Multiple Driver Nets  
+Net RAM[5][7] has multiple drivers: RAM_reg[5][7]/Q, RAM_reg[5][7]__0/Q.
+Related violations: <none>
+
+MDRV-1#41 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][0] has multiple drivers: RAM_reg[6][0]/Q, RAM_reg[6][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#42 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][1] has multiple drivers: RAM_reg[6][1]/Q, RAM_reg[6][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#43 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][2] has multiple drivers: RAM_reg[6][2]/Q, RAM_reg[6][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#44 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][3] has multiple drivers: RAM_reg[6][3]/Q, RAM_reg[6][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#45 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][4] has multiple drivers: RAM_reg[6][4]/Q, RAM_reg[6][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#46 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][5] has multiple drivers: RAM_reg[6][5]/Q, RAM_reg[6][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#47 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][6] has multiple drivers: RAM_reg[6][6]/Q, RAM_reg[6][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#48 Critical Warning
+Multiple Driver Nets  
+Net RAM[6][7] has multiple drivers: RAM_reg[6][7]/Q, RAM_reg[6][7]__0/Q.
+Related violations: <none>
+
+MDRV-1#49 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][0] has multiple drivers: RAM_reg[7][0]/Q, RAM_reg[7][0]__0/Q.
+Related violations: <none>
+
+MDRV-1#50 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][1] has multiple drivers: RAM_reg[7][1]/Q, RAM_reg[7][1]__0/Q.
+Related violations: <none>
+
+MDRV-1#51 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][2] has multiple drivers: RAM_reg[7][2]/Q, RAM_reg[7][2]__0/Q.
+Related violations: <none>
+
+MDRV-1#52 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][3] has multiple drivers: RAM_reg[7][3]/Q, RAM_reg[7][3]__0/Q.
+Related violations: <none>
+
+MDRV-1#53 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][4] has multiple drivers: RAM_reg[7][4]/Q, RAM_reg[7][4]__0/Q.
+Related violations: <none>
+
+MDRV-1#54 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][5] has multiple drivers: RAM_reg[7][5]/Q, RAM_reg[7][5]__0/Q.
+Related violations: <none>
+
+MDRV-1#55 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][6] has multiple drivers: RAM_reg[7][6]/Q, RAM_reg[7][6]__0/Q.
+Related violations: <none>
+
+MDRV-1#56 Critical Warning
+Multiple Driver Nets  
+Net RAM[7][7] has multiple drivers: RAM_reg[7][7]/Q, RAM_reg[7][7]__0/Q.
+Related violations: <none>
+
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+22 out of 22 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: addr[2:0], di[7:0], do[7:0], clk, we, en.
+Related violations: <none>
+
+RTSTAT-2#1 Critical Warning
+Partially routed net  
+56 net(s) are partially routed. The problem net(s) are RAM[1][0], RAM[1][1], RAM[1][2], RAM[1][3], RAM[1][4], RAM[1][5], RAM[1][6], RAM[1][7], RAM[2][0], RAM[2][1], RAM[2][2], RAM[2][3], RAM[2][4], RAM[2][5], RAM[2][6] (the first 15 of 56 listed).
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+22 out of 22 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: addr[2:0], di[7:0], do[7:0], clk, we, en.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+
