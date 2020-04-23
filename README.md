@@ -16,4 +16,7 @@
         3. 4 bit multiplier systolic Array
 
 # Lab_3:
-     
+     Structural Circuits
+        1. 8 tap fir filter
+        2. 8 tap fir filter pipelined
+        3. 8 tap fir filter parallel
