@@ -1,0 +1,182 @@
+/*
+
+Vivado v2014.2 (64-bit)
+SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+Process ID: 6024
+
+Current time: 	4/24/20 12:25:23 PM
+Time zone: 	Eastern European Time (Europe/Athens)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 2560x1080
+Screen resolution (DPI): 96
+Available screens: 2
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	C:/Xilinx/Vivado/2014.2/tps/win64/jre
+
+User name: 	Superminiala
+User directory: C:/Users/Superminiala/Documents/VLSI/Lab_3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Gui allocated memory:	122 mb
+Gui max memory:		3,066 mb
+Engine allocated memory: 485 mb
+
+*/
+
+// TclEventType: START_GUI
+// HColorUtils.generateUniqueColorPalette (num colors: 56) elapsed time: 0.6s
+// TclEventType: START_PROGRESS_DIALOG
+// co:P (cg:JFrame):  Opening project 'C:\Users\Superminiala\Documents\VLSI\Lab_3\Lab_3.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:\Users\Superminiala\Documents\VLSI\Lab_3\Lab_3.xpr} 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 44 mb (+43415kb) [00:00:08]
+// [Engine Memory]: 379 mb (+245733kb) [00:00:08]
+// [GUI Memory]: 78 mb (+35686kb) [00:00:09]
+// [Engine Memory]: 403 mb (+25796kb) [00:00:09]
+// [Engine Memory]: 412 mb (+8482kb) [00:00:09]
+// [Engine Memory]: 476 mb (+67321kb) [00:00:12]
+// [Engine Memory]: 478 mb (+2142kb) [00:00:13]
+// [Engine Memory]: 478 mb (+45kb) [00:00:13]
+// [Engine Memory]: 479 mb (+1601kb) [00:00:13]
+// [Engine Memory]: 480 mb (+1077kb) [00:00:13]
+// Tcl Message: open_project {C:\Users\Superminiala\Documents\VLSI\Lab_3\Lab_3.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// [Engine Memory]: 485 mb (+4448kb) [00:00:14]
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 833.633 ; gain = 44.469 
+// HMemoryUtils.trashcanNow. Engine heap size: 487 MB. GUI used memory: 31 MB. Current time: 4/24/20 12:25:24 PM
+// [Engine Memory]: 487 mb (+2183kb) [00:00:15]
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog("Opening project 'C:\\Users\\Superminiala\\Documents\\VLSI\\Lab_3\\Lab_3.xpr'"); // co:P (cg:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 489 mb (+2162kb) [00:00:16]
+// [Engine Memory]: 492 mb (+3248kb) [00:00:17]
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+// [Engine Memory]: 493 mb (+937kb) [00:00:20]
+// [GUI Memory]: 79 mb (+1773kb) [00:05:51]
+// Elapsed time: 332 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 1, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+// [Engine Memory]: 495 mb (+2445kb) [00:05:52]
+// [Engine Memory]: 499 mb (+3731kb) [00:05:52]
+// [Engine Memory]: 502 mb (+4030kb) [00:05:52]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 1, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 1, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+// Elapsed time: 172 seconds
+selectCodeEditor("FIR.vhd", 338, 249); // aU:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // u:k (w:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ag:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ag:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ag:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cg:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (JPanel:JComponent, b:g)
+// B:ae (b:g): Create Source File: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 521 MB. GUI used memory: 37 MB. Current time: 4/24/20 12:34:10 PM
+// [Engine Memory]: 521 mb (+19259kb) [00:09:05]
+// Elapsed time: 12 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "FIR_pipe"); // am:JTextField (JPanel:JComponent, B:ae)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, B:ae)
+dismissDialog("Create Source File"); // B:ae (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 23 seconds
+dismissDialog("Create Source File"); // B:ae (b:g)
+dismissDialog("Add Sources"); // b:g (cg:JFrame)
+// Tcl Message: close [ open C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd 
+// E:ae (cg:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, E:ae)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_ARE_YOU_SURE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+dismissDialog("Define Module"); // E:ae (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 522 mb (+1429kb) [00:09:20]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 525 mb (+3039kb) [00:09:25]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 2, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 4, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 4, true); // u:k (w:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FIR - Behavioral (FIR.vhd)]", 4, true, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click - Node
+// [GUI Memory]: 80 mb (+1017kb) [00:09:32]
+// [GUI Memory]: 84 mb (+4219kb) [00:09:44]
+// [GUI Memory]: 86 mb (+1868kb) [00:09:45]
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, true, false); // u:k (w:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ag:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ag:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ag:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cg:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // a:JButton (JPanel:JComponent, b:g)
+// B:ae (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "CU_pipe", true); // am:JTextField (JPanel:JComponent, B:ae)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, B:ae)
+dismissDialog("Create Source File"); // B:ae (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 19 seconds
+dismissDialog("Create Source File"); // B:ae (b:g)
+dismissDialog("Add Sources"); // b:g (cg:JFrame)
+// Tcl Message: close [ open C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/CU_pipe.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/CU_pipe.vhd 
+// E:ae (cg:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, E:ae)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_ARE_YOU_SURE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, Q:JDialog)
+dismissDialog("Define Module"); // E:ae (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, FIR_pipe.vhd]", 3, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, FIR_pipe.vhd]", 3, false, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("FIR_pipe.vhd", 43, 329); // aU:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CU_pipe.vhd]", 5, false); // u:k (w:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CU_pipe.vhd]", 5, false, false, false, false, false, true); // u:k (w:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("CU_pipe.vhd", 297, 347); // aU:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 89 mb (+2983kb) [00:15:45]
+// Elapsed time: 355 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_pipe.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FIR_pipe.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+// [Engine Memory]: 529 mb (+4583kb) [00:16:41]
+// [GUI Memory]: 90 mb (+880kb) [00:37:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 38 MB. Current time: 4/24/20 1:04:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 35 MB. Current time: 4/24/20 1:34:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 2:04:11 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 2:34:12 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 3:04:12 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 3:34:13 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 4:04:13 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 4:34:13 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 34 MB. Current time: 4/24/20 5:04:14 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 36 MB. Current time: 4/24/20 5:34:14 PM

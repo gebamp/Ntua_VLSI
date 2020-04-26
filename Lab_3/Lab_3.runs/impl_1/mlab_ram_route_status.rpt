@@ -1,0 +1,35 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :         143 :
+       # of nets not needing routing.......... :          31 :
+           # of internally routed nets........ :          31 :
+       # of routable nets..................... :         112 :
+           # of fully routed nets............. :          56 :
+       # of nets with routing errors.......... :          56 :
+           # of nets with some unrouted pins.. :          56 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors: (only the first 10 nets are listed)
+  RAM[1][0]
+    Unrouted Pin: RAM_reg[1][0]__0/Q
+  RAM[1][1]
+    Unrouted Pin: RAM_reg[1][1]__0/Q
+  RAM[1][2]
+    Unrouted Pin: RAM_reg[1][2]__0/Q
+  RAM[1][3]
+    Unrouted Pin: RAM_reg[1][3]__0/Q
+  RAM[1][4]
+    Unrouted Pin: RAM_reg[1][4]__0/Q
+  RAM[1][5]
+    Unrouted Pin: RAM_reg[1][5]__0/Q
+  RAM[1][6]
+    Unrouted Pin: RAM_reg[1][6]__0/Q
+  RAM[1][7]
+    Unrouted Pin: RAM_reg[1][7]__0/Q
+  RAM[2][0]
+    Unrouted Pin: RAM_reg[2][0]__0/Q
+  RAM[2][1]
+    Unrouted Pin: RAM_reg[2][1]__0/Q
+
