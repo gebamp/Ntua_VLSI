@@ -1,9 +1,10 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
 #-----------------------------------------------------------
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Fri Apr 24 12:25:05 2020
-# Process ID: 6024
+# Start of session at: Thu Apr 30 19:42:22 2020
+# Process ID: 15152
 # Log file: C:/Users/Superminiala/Documents/VLSI/Lab_3/vivado.log
 # Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_3\vivado.jou
 #-----------------------------------------------------------
@@ -15,8 +16,1956 @@ CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivad
 CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
 Scanning sources...
 Finished scanning sources
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 833.633 ; gain = 44.469
-close [ open C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd w ]
-add_files C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd
-close [ open C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/CU_pipe.vhd w ]
-add_files C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/CU_pipe.vhd
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 836.301 ; gain = 17.930
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj   xil_defaultlib.FIR_pipe_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj xil_defaultlib.FIR_pipe_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_pipe [fir_pipe_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_pipe_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_pipe_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_pipe_tb_behav -key {Behavioral:sim_1:Functional:FIR_pipe_tb} -tclbatch {FIR_pipe_tb.tcl} -log {FIR_pipe_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_pipe_tb/UUT/ADD_1/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_pipe_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 892.809 ; gain = 16.102
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_pipe_tb/UUT/ADD_1/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd w ]
+add_files C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd
+set_property top FIR_paral [current_fileset]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_paral
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:21 ; elapsed = 01:54:34 . Memory (MB): peak = 968.496 ; gain = 839.609
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-989] add_8_up is already declared in this region [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:490]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:23 ; elapsed = 01:54:35 . Memory (MB): peak = 990.449 ; gain = 861.563
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_paral
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:31 ; elapsed = 01:54:55 . Memory (MB): peak = 990.449 ; gain = 861.563
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4549] overwriting existing secondary unit behavioral; please search in source files and remove the duplicate architecture with same name [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'FIR_paral' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+WARNING: [Synth 8-3848] Net valid_out in module/entity FIR_paral does not have driver. [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:14]
+WARNING: [Synth 8-3848] Net y_0 in module/entity FIR_paral does not have driver. [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:15]
+WARNING: [Synth 8-3848] Net y_1 in module/entity FIR_paral does not have driver. [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'FIR_paral' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+WARNING: [Synth 8-3330] design FIR_paral has an empty top module
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port valid_out
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[15]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[14]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[13]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[12]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[11]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[10]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[9]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[8]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[7]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[6]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[5]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[4]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[3]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[2]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[1]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_0[0]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[15]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[14]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[13]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[12]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[11]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[10]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[9]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[8]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[7]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[6]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[5]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[4]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[3]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[2]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[1]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port y_1[0]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[7]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[6]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[5]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[4]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[3]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[2]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[1]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_0[0]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[7]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[6]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[5]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[4]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[3]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[2]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[1]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port x_1[0]
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port clk
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port rst
+WARNING: [Synth 8-3331] design FIR_paral has unconnected port valid_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:33 ; elapsed = 01:54:57 . Memory (MB): peak = 994.547 ; gain = 865.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/zynq/IOStandards.xml
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:05:50 ; elapsed = 01:55:07 . Memory (MB): peak = 1331.352 ; gain = 1202.465
+3 Infos, 56 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1331.910 ; gain = 341.461
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_paral
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:06:41 ; elapsed = 01:57:35 . Memory (MB): peak = 1352.199 ; gain = 1223.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_paral' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MUL_unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ADD_unit' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:226]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:236]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:244]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:255]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:263]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:273]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:281]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:291]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:299]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:309]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:317]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:327]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:335]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:345]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:353]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:363]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:371]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:381]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:389]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:399]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:407]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:417]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:425]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:435]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:443]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:453]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:461]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:471]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:480]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:490]
+INFO: [Synth 8-256] done synthesizing module 'FIR_paral' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:06:43 ; elapsed = 01:57:36 . Memory (MB): peak = 1352.199 ; gain = 1223.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:06:51 ; elapsed = 01:57:40 . Memory (MB): peak = 1352.199 ; gain = 1223.313
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1352.199 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd
+set_property top FIR_paral [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_paral_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_paral.prj   xil_defaultlib.FIR_paral"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_paral_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_paral.prj xil_defaultlib.FIR_paral 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-91] fir_pipe is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd:48]
+ERROR: [VRFC 10-91] x is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd:75]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd:10]
+INFO: [VRFC 10-240] VHDL file C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_paral_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_paral.prj   xil_defaultlib.FIR_paral"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_paral_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_paral.prj xil_defaultlib.FIR_paral 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-91] x is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd:75]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd:10]
+INFO: [VRFC 10-240] VHDL file C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_paral_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_paral.prj   xil_defaultlib.FIR_paral"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_paral_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_paral.prj xil_defaultlib.FIR_paral 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_paral
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_paral_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_paral_behav -key {Behavioral:sim_1:Functional:FIR_paral} -tclbatch {FIR_paral.tcl} -log {FIR_paral_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1352.199 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_paral_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1352.199 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+set_property top FIR_para_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1364.574 ; gain = 6.309
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1364.574 ; gain = 6.309
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:11:41 ; elapsed = 02:21:17 . Memory (MB): peak = 1388.090 ; gain = 1259.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_paral' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MUL_unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ADD_unit' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:226]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:236]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:244]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:255]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:263]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:273]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:281]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:291]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:299]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:309]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:317]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:327]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:335]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:345]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:353]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:363]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:371]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:381]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:389]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:399]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:407]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:417]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:425]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:435]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:443]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:453]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:461]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:471]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:480]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:490]
+INFO: [Synth 8-256] done synthesizing module 'FIR_paral' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:11:43 ; elapsed = 02:21:18 . Memory (MB): peak = 1388.090 ; gain = 1259.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.090 ; gain = 0.000
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1388.090 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1388.090 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_paral
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:13:06 ; elapsed = 02:37:03 . Memory (MB): peak = 1388.090 ; gain = 1259.203
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2784] type of aggregate cannot be determined without context ; 0 visible types match here [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:134]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:13:07 ; elapsed = 02:37:04 . Memory (MB): peak = 1388.090 ; gain = 1259.203
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_paral
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:13:16 ; elapsed = 02:37:38 . Memory (MB): peak = 1388.090 ; gain = 1259.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_paral' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MUL_unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ADD_unit' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:215]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:225]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:233]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:244]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:252]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:262]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:270]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:280]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:288]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:298]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:306]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:316]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:324]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:334]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:342]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:352]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:360]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:370]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:378]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:388]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:396]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:406]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:414]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:424]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:432]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:442]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:450]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:460]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:469]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:479]
+INFO: [Synth 8-256] done synthesizing module 'FIR_paral' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:13:18 ; elapsed = 02:37:39 . Memory (MB): peak = 1388.090 ; gain = 1259.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:13:24 ; elapsed = 02:37:43 . Memory (MB): peak = 1404.801 ; gain = 1275.914
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1404.801 ; gain = 16.711
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1411.086 ; gain = 6.285
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1411.086 ; gain = 6.285
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-1412] syntax error near x_reg_dw_23 [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:147]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+INFO: [VRFC 10-240] VHDL file C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+close_design
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1517.074 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1517.074 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1517.074 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1517.074 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1517.074 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1517.074 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1517.074 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_paral
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:19:18 ; elapsed = 03:40:06 . Memory (MB): peak = 1517.074 ; gain = 1388.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_paral' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MUL_unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ADD_unit' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:227]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:237]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:245]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:256]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:264]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:274]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:282]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:292]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:300]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:310]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:318]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:328]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:336]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:346]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:354]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:364]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:372]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:382]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:390]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:400]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:408]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:418]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:426]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:436]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:444]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:454]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_up' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:462]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_up' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:472]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8_dw' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:481]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8_dw' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:491]
+INFO: [Synth 8-256] done synthesizing module 'FIR_paral' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:19:19 ; elapsed = 03:40:07 . Memory (MB): peak = 1517.074 ; gain = 1388.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:19:25 ; elapsed = 03:40:10 . Memory (MB): peak = 1517.074 ; gain = 1388.188
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1517.074 ; gain = 0.000
+close_design
+reset_run synth_1
+launch_runs synth_1
+[Thu Apr 30 23:23:16 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Apr 30 23:23:37 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.172 . Memory (MB): peak = 1517.074 ; gain = 0.000
+Restoring placement.
+Restored 239 out of 239 XDEF sites from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1857.137 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1857.137 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+set_property top FIR_pipe_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top FIR_pipe [current_fileset]
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj   xil_defaultlib.FIR_pipe_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj xil_defaultlib.FIR_pipe_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_pipe [fir_pipe_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_pipe_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_pipe_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_pipe_tb_behav -key {Behavioral:sim_1:Functional:FIR_pipe_tb} -tclbatch {FIR_pipe_tb.tcl} -log {FIR_pipe_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_pipe_tb/UUT/ADD_1/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1858.691 ; gain = 0.055
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_pipe_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1858.691 ; gain = 0.055
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_pipe_tb/UUT/ADD_1/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+reset_run synth_1
+launch_runs synth_1
+[Thu Apr 30 23:31:22 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Apr 30 23:31:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR_pipe
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:22:32 ; elapsed = 03:50:17 . Memory (MB): peak = 1889.730 ; gain = 1760.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_pipe' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:17]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_1' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MUL_unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:17]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_1' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ADD_unit' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:15]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_2' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:140]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_2' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:150]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_3' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:158]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_3' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:168]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_4' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:176]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_4' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:186]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_5' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:195]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_5' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:205]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_6' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:213]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_6' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:223]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_7' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:231]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_7' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:241]
+INFO: [Synth 8-3491] module 'MUL_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd:6' bound to instance 'MUL_8' of component 'MUL_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:249]
+INFO: [Synth 8-3491] module 'ADD_unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd:6' bound to instance 'ADD_8' of component 'ADD_unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'FIR_pipe' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:22:33 ; elapsed = 03:50:18 . Memory (MB): peak = 1889.730 ; gain = 1760.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:22:38 ; elapsed = 03:50:21 . Memory (MB): peak = 1889.730 ; gain = 1760.844
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1889.730 ; gain = 0.000
+set_property top FIR [current_fileset]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:23:05 ; elapsed = 03:51:58 . Memory (MB): peak = 1889.730 ; gain = 1760.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:17]
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:7' bound to instance 'CU' of component 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+INFO: [Synth 8-4471] merging register 'rom_address_reg[2:0]' into 'ram_address_reg[2:0]' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:5' bound to instance 'RAM' of component 'mlab_ram' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram__parameterized0' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:5' bound to instance 'ROM' of component 'mlab_rom' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom__parameterized0' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:6' bound to instance 'MAC1' of component 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'MAC' (4#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'FIR' (5#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:23:06 ; elapsed = 03:51:59 . Memory (MB): peak = 1889.730 ; gain = 1760.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1889.730 ; gain = 0.000
+set_property top FIR_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_design
+reset_run synth_1
+launch_runs synth_1
+[Thu Apr 30 23:35:26 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Apr 30 23:36:01 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/impl_1/runme.log
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mlab_ram [\mlab_ram(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.mlab_rom [\mlab_rom(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [mac_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR [fir_default]
+Compiling architecture testbench of entity xil_defaultlib.fir_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_TB_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_TB_behav -key {Behavioral:sim_1:Functional:FIR_TB} -tclbatch {FIR_TB.tcl} -log {FIR_TB_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1889.730 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_TB_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1889.730 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1889.730 ; gain = 0.000
+Restoring placement.
+Restored 92 out of 92 XDEF sites from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+set_property top FIR_pipe_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj   xil_defaultlib.FIR_pipe_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj xil_defaultlib.FIR_pipe_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_pipe [fir_pipe_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_pipe_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_pipe_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_pipe_tb_behav -key {Behavioral:sim_1:Functional:FIR_pipe_tb} -tclbatch {FIR_pipe_tb.tcl} -log {FIR_pipe_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_pipe_tb/UUT/ADD_1/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1894.359 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_pipe_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1894.359 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_pipe_tb/UUT/ADD_1/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+set_property top FIR_para_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1894.359 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1894.359 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 30 23:55:12 2020...

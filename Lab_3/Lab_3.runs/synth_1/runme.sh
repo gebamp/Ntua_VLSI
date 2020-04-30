@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log mlab_ram.vds -m64 -mode batch -messageDb vivado.pb -source mlab_ram.tcl
+EAStep vivado -log FIR.vds -m64 -mode batch -messageDb vivado.pb -source FIR.tcl

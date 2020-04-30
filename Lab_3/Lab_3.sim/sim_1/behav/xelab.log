@@ -1,6 +1,6 @@
 Vivado Simulator 2014.2
 Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_pipe_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_pipe_tb.prj xil_defaultlib.FIR_pipe_tb 
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
 Multi-threading is on. Using 2 slave threads.
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
@@ -10,8 +10,10 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/La
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
 Starting static elaboration
@@ -26,7 +28,7 @@ Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
 Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
-Compiling architecture behavioral of entity xil_defaultlib.FIR_pipe [fir_pipe_default]
-Compiling architecture behavioral of entity xil_defaultlib.fir_pipe_tb
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
 Waiting for 2 sub-compilation(s) to finish...
-Built simulation snapshot FIR_pipe_tb_behav
+Built simulation snapshot FIR_para_tb_behav

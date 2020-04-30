@@ -2,9 +2,9 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Thu Apr 23 14:27:59 2020
-# Process ID: 13652
-# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/impl_1/mlab_ram.vdi
+# Start of session at: Thu Apr 30 23:36:03 2020
+# Process ID: 1736
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/impl_1/FIR.vdi
 # Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source mlab_ram.tcl -notrace
+source FIR.tcl -notrace

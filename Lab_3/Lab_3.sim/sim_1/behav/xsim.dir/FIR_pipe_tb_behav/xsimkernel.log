@@ -1,5 +1,5 @@
-Running: xsim.dir/FIR_pipe_tb_behav/xsimk.exe -simmode gui -wdb FIR_pipe_tb_behav.wdb -simrunnum 0 -socket 53540
+Running: xsim.dir/FIR_pipe_tb_behav/xsimk.exe -simmode gui -wdb FIR_pipe_tb_behav.wdb -simrunnum 0 -socket 56008
 Design successfully loaded
-Design Loading CPU Usage: 717 ms
+Design Loading CPU Usage: 265 ms
 Simulation completed
-Simulation CPU Usage: 811 ms
+Simulation CPU Usage: 374 ms
