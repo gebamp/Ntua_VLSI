@@ -26,9 +26,10 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
-Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
-Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [\MUL_unit(8,8,8)\]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [\ADD_unit(8,8,8)\]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [\FIR_paral(8,8,8)\]
 Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
 Waiting for 2 sub-compilation(s) to finish...
 Built simulation snapshot FIR_para_tb_behav

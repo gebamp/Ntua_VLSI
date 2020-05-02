@@ -2,43 +2,60 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.math_real.all;
 
 entity FIR_pipe is
+generic(
+    data_width :   integer    := 8;
+    coeff_width:   integer    := 8;
+    min_vector_size: integer  := 8
+);
+
     Port ( 
-          x : in std_logic_vector( 7 downto 0);
+          x : in std_logic_vector( data_width-1 downto 0);
           clk : in std_logic;
           rst : in std_logic;
           valid_in : in std_logic;
           valid_out : out std_logic;
-          y : out std_logic_vector(15 downto 0) 
+          y : out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1  downto 0) 
           );
 end FIR_pipe;
 
 architecture Behavioral of FIR_pipe is
     component MUL_unit is
+    generic(
+        data_width :   integer    := 8;
+        coeff_width:   integer    := 8;
+        min_vector_size: integer  := 8
+        );
         port(
-        x         : in  std_logic_vector (7 downto 0);
-        h         : in  std_logic_vector (7 downto 0);
+        x         : in  std_logic_vector (data_width-1 downto 0);
+        h         : in  std_logic_vector (coeff_width-1 downto 0);
         clk       : in  std_logic ;
         valid_in  : in  std_logic ;
         valid_out : out std_logic;
-        mul_res   : out std_logic_vector(15 downto 0)        
+        mul_res   : out std_logic_vector(data_width+coeff_width-1 downto 0)        
         );
     end component;
     component ADD_unit is
+        generic(
+            data_width :   integer    := 8;
+            coeff_width:   integer    := 8;
+            min_vector_size: integer  := 8
+        );
         port(
-        mul_res  : in std_logic_vector (15 downto 0);
-        acc      : in std_logic_vector (15 downto 0);
+        mul_res  : in std_logic_vector (data_width+coeff_width-1 downto 0);
+        acc      : in std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
         clk      : in std_logic ;
-        y_temp   : out std_logic_vector(15 downto 0)    
+        y_temp   : out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1  downto 0)    
         );
     end component;
     
-    type   x_register is array (6 downto 0) of std_logic_vector ( 7 downto 0);
+    type   x_register is array (6 downto 0) of std_logic_vector ( data_width-1 downto 0);
     signal x_reg : x_register := (others => (others => '0'));
    
     
-    type   coeff_mem is array (7 downto 0) of std_logic_vector ( 7 downto 0);
+    type   coeff_mem is array (7 downto 0) of std_logic_vector ( coeff_width-1 downto 0);
     signal coeff : coeff_mem :=( "00001000",
                                   "00000111",
                                   "00000110",
@@ -47,22 +64,22 @@ architecture Behavioral of FIR_pipe is
                                   "00000011",
                                   "00000010",
                                   "00000001");
-    signal mul_out_1 : std_logic_vector (15 downto 0);
-    signal mul_out_2 : std_logic_vector (15 downto 0);
-    signal mul_out_3 : std_logic_vector (15 downto 0);
-    signal mul_out_4 : std_logic_vector (15 downto 0);
-    signal mul_out_5 : std_logic_vector (15 downto 0);
-    signal mul_out_6 : std_logic_vector (15 downto 0);
-    signal mul_out_7 : std_logic_vector (15 downto 0);
-    signal mul_out_8 : std_logic_vector (15 downto 0);
+    signal mul_out_1 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_2 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_3 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_4 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_5 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_6 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_7 : std_logic_vector (data_width+coeff_width-1 downto 0);
+    signal mul_out_8 : std_logic_vector (data_width+coeff_width-1 downto 0);
 
-    signal add_out_1 : std_logic_vector (15 downto 0);
-    signal add_out_2 : std_logic_vector (15 downto 0);
-    signal add_out_3 : std_logic_vector (15 downto 0);
-    signal add_out_4 : std_logic_vector (15 downto 0);
-    signal add_out_5 : std_logic_vector (15 downto 0);
-    signal add_out_6 : std_logic_vector (15 downto 0);
-    signal add_out_7 : std_logic_vector (15 downto 0);
+    signal add_out_1 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+    signal add_out_2 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+    signal add_out_3 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+    signal add_out_4 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+    signal add_out_5 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+    signal add_out_6 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+    signal add_out_7 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
 
     signal valid_out_1 : std_logic ;
     signal valid_out_2 : std_logic ;
@@ -75,14 +92,15 @@ architecture Behavioral of FIR_pipe is
     signal valid_out_9 : std_logic ;
     
     
-    signal x_temp_1 : std_logic_vector(7 downto 0) := (others => '0');
-    signal x_temp_2 : std_logic_vector(7 downto 0) := (others => '0');
-    signal x_temp_3 : std_logic_vector(7 downto 0) := (others => '0');
-    signal x_temp_4 : std_logic_vector(7 downto 0) := (others => '0');
-    signal x_temp_5 : std_logic_vector(7 downto 0) := (others => '0');
-    signal x_temp_6 : std_logic_vector(7 downto 0) := (others => '0');
-    signal x_temp_7 : std_logic_vector(7 downto 0) := (others => '0');
-                                            
+    signal x_temp_1 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    signal x_temp_2 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    signal x_temp_3 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    signal x_temp_4 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    signal x_temp_5 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    signal x_temp_6 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    signal x_temp_7 : std_logic_vector(data_width-1 downto 0) := (others => '0');
+    
+    signal acc:  std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0) :=   (others => '0');                               
     begin
     
     process(clk,rst)
@@ -98,7 +116,7 @@ architecture Behavioral of FIR_pipe is
             x_temp_7 <= (others => '0');
         else 
             if( rising_edge(clk) ) then
-                if (valid_in = '1') then
+                if (valid_in = '1') or x=0 then
                     x_temp_1 <= x;
                     x_reg(0) <= x_temp_1;
                     x_temp_2 <= x_reg(0);
@@ -132,7 +150,7 @@ MUL_1:
 ADD_1:
     ADD_unit port map (
     mul_res => mul_out_1,
-    acc     => "0000000000000000",
+    acc     => acc,
     clk     => clk,
     y_temp  => add_out_1     
     );

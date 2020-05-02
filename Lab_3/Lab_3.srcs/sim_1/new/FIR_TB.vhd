@@ -1,18 +1,26 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.math_real.all;
 
 entity FIR_TB is
     end FIR_TB;
 
 architecture testbench of FIR_TB is
-
+constant data_width, coeff_width,min_vector_size : integer := 8;
 component FIR
-    Port ( 
+    generic(
+    data_width :   integer    := 8;
+    coeff_width:   integer    := 8;
+    min_vector_size: integer  := 8
+);
+Port ( 
     clk: in std_logic;
     rst: in std_logic;
     valid_in : in std_logic;
-    x: in std_logic_vector(7 downto 0);
-    y: out std_logic_vector(15  downto 0);
+    x: in std_logic_vector(data_width-1 downto 0);
+    y: out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1  downto 0);
     valid_out : out std_logic
     );
 end component;
@@ -20,11 +28,11 @@ end component;
 signal clk: std_logic:='0';
 signal rst: std_logic:='0';
 signal valid_in: std_logic:='0';
-signal x : std_logic_vector(7 downto 0):=(others=>'0');
+signal x : std_logic_vector(data_width-1 downto 0):=(others=>'0');
 signal valid_out: std_logic:='0';
 
 --output signals
-signal y : std_logic_vector(15 downto 0):=(others=>'0');
+signal y : std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0):=(others=>'0');
 
 --Clock
 constant CLKP : time := 100ps;
@@ -127,6 +135,7 @@ TEST:
     wait for CLKP;
     valid_in <='0';
     wait for 7*CLKP;
+
     wait for 100*CLKP;   
     end process;
 

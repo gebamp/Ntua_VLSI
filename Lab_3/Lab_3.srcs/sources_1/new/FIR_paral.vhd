@@ -2,47 +2,58 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.math_real.all;
 
 
 entity FIR_paral is
+      generic(
+        data_width :   integer    := 8;
+        coeff_width:   integer    := 8;
+        min_vector_size: integer  := 8
+        );
       Port ( 
-      x_0 : in std_logic_vector( 7 downto 0);
-      x_1 : in std_logic_vector( 7 downto 0);
+      x_0 : in std_logic_vector( data_width-1 downto 0);
+      x_1 : in std_logic_vector( data_width-1 downto 0);
       clk : in std_logic;
       rst : in std_logic;
       valid_in : in std_logic;
       valid_out : out std_logic;
-      y_0 : out std_logic_vector(15 downto 0);
-      y_1 : out std_logic_vector(15 downto 0) 
+      y_0 : out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+      y_1 : out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0) 
       );
 
 end FIR_paral;
 
 architecture Behavioral of FIR_paral is
     component MUL_unit is
+    generic(
+        data_width :   integer    := 8;
+        coeff_width:   integer    := 8;
+        min_vector_size: integer  := 8
+    );
     port(
-    x         : in  std_logic_vector (7 downto 0);
-    h         : in  std_logic_vector (7 downto 0);
+    x         : in  std_logic_vector (data_width-1 downto 0);
+    h         : in  std_logic_vector (coeff_width-1 downto 0);
     clk       : in  std_logic ;
     valid_in  : in  std_logic ;
     valid_out : out std_logic;
-    mul_res   : out std_logic_vector(15 downto 0)        
+    mul_res   : out std_logic_vector(data_width+coeff_width-1 downto 0)        
     );
 end component;
 component ADD_unit is
     port(
-    mul_res  : in std_logic_vector (15 downto 0);
-    acc      : in std_logic_vector (15 downto 0);
+    mul_res  : in std_logic_vector (data_width+coeff_width-1 downto 0);
+    acc      : in std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
     clk      : in std_logic ;
-    y_temp   : out std_logic_vector(15 downto 0)    
+    y_temp   : out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0)    
     );
 end component;
 
-type   x_register is array (6 downto 0) of std_logic_vector ( 7 downto 0);
+type   x_register is array (6 downto 0) of std_logic_vector ( data_width-1 downto 0);
 signal x_reg_up : x_register := (others => (others => '0'));
 signal x_reg_dw : x_register := (others => (others => '0'));
 
-type   coeff_mem is array (7 downto 0) of std_logic_vector ( 7 downto 0);
+type   coeff_mem is array (7 downto 0) of std_logic_vector ( coeff_width-1 downto 0);
 signal coeff : coeff_mem :=( "00001000",
                               "00000111",
                               "00000110",
@@ -51,39 +62,39 @@ signal coeff : coeff_mem :=( "00001000",
                               "00000011",
                               "00000010",
                               "00000001");
-signal up_mul_out_1 : std_logic_vector (15 downto 0);
-signal up_mul_out_2 : std_logic_vector (15 downto 0);
-signal up_mul_out_3 : std_logic_vector (15 downto 0);
-signal up_mul_out_4 : std_logic_vector (15 downto 0);
-signal up_mul_out_5 : std_logic_vector (15 downto 0);
-signal up_mul_out_6 : std_logic_vector (15 downto 0);
-signal up_mul_out_7 : std_logic_vector (15 downto 0);
-signal up_mul_out_8 : std_logic_vector (15 downto 0);
+signal up_mul_out_1 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_2 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_3 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_4 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_5 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_6 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_7 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal up_mul_out_8 : std_logic_vector (data_width+coeff_width-1 downto 0);
 
-signal up_add_out_1 : std_logic_vector (15 downto 0);
-signal up_add_out_2 : std_logic_vector (15 downto 0);
-signal up_add_out_3 : std_logic_vector (15 downto 0);
-signal up_add_out_4 : std_logic_vector (15 downto 0);
-signal up_add_out_5 : std_logic_vector (15 downto 0);
-signal up_add_out_6 : std_logic_vector (15 downto 0);
-signal up_add_out_7 : std_logic_vector (15 downto 0);
+signal up_add_out_1 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal up_add_out_2 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal up_add_out_3 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal up_add_out_4 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal up_add_out_5 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal up_add_out_6 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal up_add_out_7 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
 
-signal dw_mul_out_1 : std_logic_vector (15 downto 0);
-signal dw_mul_out_2 : std_logic_vector (15 downto 0);
-signal dw_mul_out_3 : std_logic_vector (15 downto 0);
-signal dw_mul_out_4 : std_logic_vector (15 downto 0);
-signal dw_mul_out_5 : std_logic_vector (15 downto 0);
-signal dw_mul_out_6 : std_logic_vector (15 downto 0);
-signal dw_mul_out_7 : std_logic_vector (15 downto 0);
-signal dw_mul_out_8 : std_logic_vector (15 downto 0);
+signal dw_mul_out_1 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_2 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_3 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_4 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_5 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_6 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_7 : std_logic_vector (data_width+coeff_width-1 downto 0);
+signal dw_mul_out_8 : std_logic_vector (data_width+coeff_width-1 downto 0);
 
-signal dw_add_out_1 : std_logic_vector (15 downto 0);
-signal dw_add_out_2 : std_logic_vector (15 downto 0);
-signal dw_add_out_3 : std_logic_vector (15 downto 0);
-signal dw_add_out_4 : std_logic_vector (15 downto 0);
-signal dw_add_out_5 : std_logic_vector (15 downto 0);
-signal dw_add_out_6 : std_logic_vector (15 downto 0);
-signal dw_add_out_7 : std_logic_vector (15 downto 0);
+signal dw_add_out_1 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal dw_add_out_2 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal dw_add_out_3 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal dw_add_out_4 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal dw_add_out_5 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal dw_add_out_6 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
+signal dw_add_out_7 : std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);
 
 signal up_valid_out_1 : std_logic ;
 signal up_valid_out_2 : std_logic ;
@@ -105,27 +116,28 @@ signal dw_valid_out_7 : std_logic ;
 signal dw_valid_out_8 : std_logic ;
 signal dw_valid_out_9 : std_logic ;
 
-signal x_reg_up_12 : std_logic_vector ( 7 downto 0) := (others => '0');
-signal x_reg_up_23 : std_logic_vector ( 7 downto 0) := (others => '0');
-signal x_reg_dw_23 : std_logic_vector ( 7 downto 0) := (others => '0');
-signal x_reg_dw_34 : std_logic_vector ( 7 downto 0) := (others => '0');
+signal x_reg_up_12 : std_logic_vector ( data_width-1 downto 0) := (others => '0');
+signal x_reg_up_23 : std_logic_vector ( data_width-1 downto 0) := (others => '0');
+signal x_reg_dw_23 : std_logic_vector ( data_width-1 downto 0) := (others => '0');
+signal x_reg_dw_34 : std_logic_vector ( data_width-1 downto 0) := (others => '0');
 
-type   register_array_2 is array (1 downto 0) of std_logic_vector ( 7 downto 0);
+type   register_array_2 is array (1 downto 0) of std_logic_vector ( data_width-1 downto 0);
 signal x_reg_up_34 : register_array_2 := (others => (others => '0'));
 signal x_reg_up_45 : register_array_2 := (others => (others => '0'));
 signal x_reg_dw_45 : register_array_2 := (others => (others => '0'));
 signal x_reg_dw_56 : register_array_2 := (others => (others => '0'));
 
-type   register_array_3 is array (2 downto 0) of std_logic_vector ( 7 downto 0);
+type   register_array_3 is array (2 downto 0) of std_logic_vector ( data_width-1 downto 0);
 signal x_reg_up_56 : register_array_3 := (others => (others => '0'));
 signal x_reg_up_67 : register_array_3 := (others => (others => '0'));
 signal x_reg_dw_67 : register_array_3 := (others => (others => '0'));
 signal x_reg_dw_78 : register_array_3 := (others => (others => '0'));
 
-type   register_array_4 is array (3 downto 0) of std_logic_vector ( 7 downto 0);
+type   register_array_4 is array (3 downto 0) of std_logic_vector ( data_width-1 downto 0);
 signal x_reg_up_78 : register_array_4 := (others => (others => '0'));
 
-signal sherlock : std_logic_vector (7 downto 0);
+signal sherlock : std_logic_vector (data_width-1 downto 0);
+signal acc:  std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0) :=   (others => '0');
 begin
     process(clk,rst)
     begin
@@ -146,7 +158,7 @@ begin
             x_reg_up_78   <=  (others => (others => '0'));
         else 
             if( rising_edge(clk) ) then
-                if (valid_in = '1') then
+                if (valid_in = '1') or (x_0=0 and x_1=0) then
                     x_reg_up(0) <= x_1;
                     x_reg_dw(0) <= x_0;
                     x_reg_up_12 <= x_reg_up(0);
@@ -219,7 +231,7 @@ MUL_1_up:
 ADD_1_up:
    ADD_unit port map (
    mul_res => up_mul_out_1,
-   acc     => "0000000000000000",
+   acc     => acc,
    clk     => clk,
    y_temp  => up_add_out_1     
    );
@@ -237,7 +249,7 @@ MUL_1_dw:
 ADD_1_dw:
   ADD_unit port map (
   mul_res => dw_mul_out_1,
-  acc     => "0000000000000000",
+  acc     => acc,
   clk     => clk,
   y_temp  => dw_add_out_1     
   );

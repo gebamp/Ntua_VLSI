@@ -2,25 +2,36 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use IEEE.math_real.all;
 
 entity FIR is
+    generic(
+        data_width :   integer    := 8;
+        coeff_width:   integer    := 8;
+        min_vector_size: integer  := 8
+    );
     Port ( 
         clk: in std_logic;
         rst: in std_logic;
         valid_in : in std_logic;
-        x: in std_logic_vector(7 downto 0);
-        y: out std_logic_vector(15  downto 0);
+        x: in std_logic_vector(data_width-1 downto 0);
+        y: out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1  downto 0);
         valid_out : out std_logic
         );
 end FIR;
 
 architecture Behavioral of FIR is
     component MAC is
+        generic(
+        data_width :   integer    := 8;
+        coeff_width:   integer    := 8;
+        min_vector_size: integer  := 8
+    );
     port(
-        rom_out: in std_logic_vector(7 downto 0);
-        ram_out: in std_logic_vector(7 downto 0);
+        rom_out: in std_logic_vector(data_width-1 downto 0);
+        ram_out: in std_logic_vector(coeff_width-1 downto 0);
         mac_init : in std_logic;
-        L: out std_logic_vector(15  downto 0);
+        L: out std_logic_vector((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1  downto 0);
         clk : in std_logic
     );
     end component;
@@ -64,14 +75,14 @@ architecture Behavioral of FIR is
     );
     end component;
     
-    signal x_reg: std_logic_vector(7 downto 0);
+    signal x_reg: std_logic_vector(data_width-1 downto 0);
     signal mac_init_reg: std_logic;   
     signal rom_address: std_logic_vector(2 downto 0);
     signal ram_address: std_logic_vector(2 downto 0);
     signal mac_init: std_logic;
     signal we:std_logic;
-    signal ram_out: std_logic_vector(7 downto 0);
-    signal rom_out: std_logic_vector(7 downto 0);
+    signal ram_out: std_logic_vector(data_width-1 downto 0);
+    signal rom_out: std_logic_vector(coeff_width-1 downto 0);
         
 begin
 

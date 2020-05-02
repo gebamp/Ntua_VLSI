@@ -1,0 +1,1195 @@
+INFO: [Common 17-701] A license check has taken more than 10 seconds to complete. This may indicate that there is a performance issue with one or more license servers listed in XILINXD_LICENSE_FILE or LM_LICENSE_FILE, or that the license servers are just not responding at all. Try setting the FLEXLM_DIAGNOSTICS environment variable to 3 and running Vivado again to get more information.
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sat May 02 16:33:11 2020
+# Process ID: 2368
+# Log file: C:/Users/Superminiala/Documents/VLSI/Lab_3/vivado.log
+# Journal file: C:/Users/Superminiala/Documents/VLSI/Lab_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Superminiala\Documents\VLSI\Lab_3\Lab_3.xpr}
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 836.707 ; gain = 56.664
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:40 ; elapsed = 00:26:10 . Memory (MB): peak = 886.941 ; gain = 756.980
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-995] data_width is illegal in an expression [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:11]
+ERROR: [Synth 8-1031] coeff_wdith is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:11]
+ERROR: [Synth 8-955] data_width cannot be used within its own interface list [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:8]
+INFO: [Synth 8-2810] unit mac ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:6]
+ERROR: [Synth 8-1940] entity mac is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:23]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:29]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:32]
+ERROR: [Synth 8-1031] mac_init is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:28]
+ERROR: [Synth 8-1031] l is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:34]
+ERROR: [Synth 8-1031] rising_edge is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:27]
+ERROR: [Synth 8-1031] clk is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:41 ; elapsed = 00:26:11 . Memory (MB): peak = 908.805 ; gain = 778.844
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 13 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:51 ; elapsed = 00:26:58 . Memory (MB): peak = 908.805 ; gain = 778.844
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-995] data_width is illegal in an expression [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:11]
+ERROR: [Synth 8-995] coeff_width is illegal in an expression [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:11]
+ERROR: [Synth 8-1031] ceil is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:11]
+ERROR: [Synth 8-2389] near integer ; type conversion expression type cannot be determined uniquely [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:11]
+ERROR: [Synth 8-955] data_width cannot be used within its own interface list [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:8]
+ERROR: [Synth 8-955] coeff_width cannot be used within its own interface list [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:9]
+INFO: [Synth 8-2810] unit mac ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:6]
+ERROR: [Synth 8-1940] entity mac is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:23]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:29]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:32]
+ERROR: [Synth 8-1031] mac_init is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:28]
+ERROR: [Synth 8-1031] l is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:34]
+ERROR: [Synth 8-1031] rising_edge is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:27]
+ERROR: [Synth 8-1031] clk is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:52 ; elapsed = 00:26:59 . Memory (MB): peak = 910.391 ; gain = 780.430
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 16 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:05 ; elapsed = 00:29:26 . Memory (MB): peak = 910.496 ; gain = 780.535
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1031] ceil is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:16]
+ERROR: [Synth 8-2389] near integer ; type conversion expression type cannot be determined uniquely [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:16]
+INFO: [Synth 8-2810] unit mac ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:6]
+ERROR: [Synth 8-1940] entity mac is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:21]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:28]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:29]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:31]
+ERROR: [Synth 8-1031] mac_init is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:27]
+ERROR: [Synth 8-1031] l is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:33]
+ERROR: [Synth 8-1031] rising_edge is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:26]
+ERROR: [Synth 8-1031] clk is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:06 ; elapsed = 00:29:27 . Memory (MB): peak = 914.348 ; gain = 784.387
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 12 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:12 ; elapsed = 00:29:42 . Memory (MB): peak = 914.348 ; gain = 784.387
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1031] fmin is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:16]
+INFO: [Synth 8-2810] unit mac ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:6]
+ERROR: [Synth 8-1940] entity mac is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:21]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:28]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:29]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:31]
+ERROR: [Synth 8-1031] mac_init is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:27]
+ERROR: [Synth 8-1031] l is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:33]
+ERROR: [Synth 8-1031] rising_edge is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:26]
+ERROR: [Synth 8-1031] clk is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:13 ; elapsed = 00:29:43 . Memory (MB): peak = 917.574 ; gain = 787.613
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 11 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:02:22 ; elapsed = 00:30:32 . Memory (MB): peak = 917.574 ; gain = 787.613
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1031] fmin is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:16]
+INFO: [Synth 8-2810] unit mac ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:6]
+ERROR: [Synth 8-1940] entity mac is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:21]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:28]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:29]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:31]
+ERROR: [Synth 8-1031] mac_init is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:27]
+ERROR: [Synth 8-1031] l is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:33]
+ERROR: [Synth 8-1031] rising_edge is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:26]
+ERROR: [Synth 8-1031] clk is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:23 ; elapsed = 00:30:33 . Memory (MB): peak = 918.773 ; gain = 788.813
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 11 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:16 ; elapsed = 00:39:50 . Memory (MB): peak = 929.762 ; gain = 799.801
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2778] type error near min_vector_size ; expected type real [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:17]
+INFO: [Synth 8-2810] unit mac ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:7]
+ERROR: [Synth 8-1940] entity mac is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:23]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:29]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-1031] accumulator is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:32]
+ERROR: [Synth 8-1031] mac_init is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:28]
+ERROR: [Synth 8-1031] l is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:34]
+ERROR: [Synth 8-1031] rising_edge is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:27]
+ERROR: [Synth 8-1031] clk is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:17 ; elapsed = 00:39:51 . Memory (MB): peak = 930.781 ; gain = 800.820
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 11 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:24 ; elapsed = 00:40:12 . Memory (MB): peak = 930.781 ; gain = 800.820
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1031] fmin is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:23]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:25 ; elapsed = 00:40:13 . Memory (MB): peak = 932.617 ; gain = 802.656
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:36 ; elapsed = 00:40:55 . Memory (MB): peak = 937.199 ; gain = 807.238
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-995] data_width is illegal in an expression [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:12]
+ERROR: [Synth 8-1031] coeff_wdith is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:12]
+ERROR: [Synth 8-955] data_width cannot be used within its own interface list [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:9]
+INFO: [Synth 8-2810] unit fir ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:7]
+ERROR: [Synth 8-1940] entity fir is not yet compiled [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:24]
+ERROR: [Synth 8-1031] integer is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:27]
+ERROR: [Synth 8-1031] integer is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:28]
+ERROR: [Synth 8-1031] integer is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:29]
+ERROR: [Synth 8-1031] integer is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:30]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:33]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:34]
+ERROR: [Synth 8-1031] std_logic is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:35]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:36]
+ERROR: [Synth 8-1031] std_logic is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:37]
+ERROR: [Synth 8-1031] integer is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:43]
+ERROR: [Synth 8-1031] std_logic is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:46]
+ERROR: [Synth 8-1031] std_logic is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:47]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:48]
+ERROR: [Synth 8-1031] std_logic_vector is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:37 ; elapsed = 00:40:56 . Memory (MB): peak = 937.199 ; gain = 807.238
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 19 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:59 ; elapsed = 00:45:32 . Memory (MB): peak = 937.199 ; gain = 807.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:7' bound to instance 'CU' of component 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+INFO: [Synth 8-4471] merging register 'rom_address_reg[2:0]' into 'ram_address_reg[2:0]' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:5' bound to instance 'RAM' of component 'mlab_ram' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram__parameterized0' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:5' bound to instance 'ROM' of component 'mlab_rom' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom__parameterized0' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter x_vector_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:7' bound to instance 'MAC1' of component 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+WARNING: [Synth 8-3819] Generic 'x_vector_size' not present in instantiated entity will be ignored [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+ERROR: [Synth 8-690] width mismatch in assignment; target has 19 bits, source has 16 bits [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-285] failed synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-285] failed synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:01 ; elapsed = 00:45:33 . Memory (MB): peak = 938.098 ; gain = 808.137
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+13 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:28 ; elapsed = 00:50:46 . Memory (MB): peak = 939.566 ; gain = 809.605
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2778] type error near resize ; expected type std_logic_vector [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:29 ; elapsed = 00:50:48 . Memory (MB): peak = 940.406 ; gain = 810.445
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:36 ; elapsed = 00:51:21 . Memory (MB): peak = 940.406 ; gain = 810.445
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2778] type error near resize ; expected type std_logic_vector [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:37 ; elapsed = 00:51:22 . Memory (MB): peak = 940.922 ; gain = 810.961
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+1 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:47 ; elapsed = 00:52:00 . Memory (MB): peak = 940.922 ; gain = 810.961
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2029] formal arg has no actual or default value [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+INFO: [Synth 8-994] arg is declared here [../pkgs/numeric_std.vhd:681]
+INFO: [Synth 8-994] new_size is declared here [../pkgs/numeric_std.vhd:681]
+INFO: [Synth 8-994] arg is declared here [../pkgs/numeric_std.vhd:681]
+INFO: [Synth 8-994] new_size is declared here [../pkgs/numeric_std.vhd:681]
+ERROR: [Synth 8-2235] indexed name prefix type signed expects 1 dimensions [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-2781] type mismatch at operator "*" ; expected type signed [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-2389] near std_logic_vector ; type conversion expression type cannot be determined uniquely [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+INFO: [Synth 8-2810] unit behavioral ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:48 ; elapsed = 00:52:01 . Memory (MB): peak = 942.563 ; gain = 812.602
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+5 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:03 ; elapsed = 01:01:42 . Memory (MB): peak = 948.258 ; gain = 818.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:7' bound to instance 'CU' of component 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+INFO: [Synth 8-4471] merging register 'rom_address_reg[2:0]' into 'ram_address_reg[2:0]' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:5' bound to instance 'RAM' of component 'mlab_ram' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram__parameterized0' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:5' bound to instance 'ROM' of component 'mlab_rom' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom__parameterized0' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter x_vector_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:7' bound to instance 'MAC1' of component 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+WARNING: [Synth 8-3819] Generic 'x_vector_size' not present in instantiated entity will be ignored [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+ERROR: [Synth 8-690] width mismatch in assignment; target has 19 bits, source has 16 bits [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:30]
+ERROR: [Synth 8-285] failed synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+ERROR: [Synth 8-285] failed synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:04 ; elapsed = 01:01:43 . Memory (MB): peak = 953.324 ; gain = 823.363
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+    while executing
+"rt::run_rtlelab -module $rt::top"
+    ("uplevel" body line 46)
+    invoked from within
+"uplevel #0 {
+    set ::env(BUILTIN_SYNTH) true
+    source $::env(HRT_TCL_PATH)/rtSynthPrep.tcl
+    set rt::cmdEcho 0
+    rt::set_parameter writeXmsg t..."
+ERROR: [Common 17-39] 'source' failed due to earlier errors.
+13 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+
+Starting synthesis...
+
+Using part: xc7z010clg400-1
+Top: FIR
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:05:11 ; elapsed = 01:03:41 . Memory (MB): peak = 956.223 ; gain = 826.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:7' bound to instance 'CU' of component 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+INFO: [Synth 8-4471] merging register 'rom_address_reg[2:0]' into 'ram_address_reg[2:0]' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:5' bound to instance 'RAM' of component 'mlab_ram' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram__parameterized0' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:5' bound to instance 'ROM' of component 'mlab_rom' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom__parameterized0' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter x_vector_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:7' bound to instance 'MAC1' of component 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+WARNING: [Synth 8-3819] Generic 'x_vector_size' not present in instantiated entity will be ignored [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'MAC__parameterized0' (4#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FIR' (5#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:12 ; elapsed = 01:03:42 . Memory (MB): peak = 957.230 ; gain = 827.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z010/clg400/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/zynq/IOStandards.xml
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:05:29 ; elapsed = 01:03:53 . Memory (MB): peak = 1273.734 ; gain = 1143.773
+16 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1273.734 ; gain = 318.422
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:06:03 ; elapsed = 01:07:12 . Memory (MB): peak = 1283.273 ; gain = 1153.313
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:7' bound to instance 'CU' of component 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+INFO: [Synth 8-4471] merging register 'rom_address_reg[2:0]' into 'ram_address_reg[2:0]' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:5' bound to instance 'RAM' of component 'mlab_ram' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram__parameterized0' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:5' bound to instance 'ROM' of component 'mlab_rom' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom__parameterized0' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter x_vector_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:7' bound to instance 'MAC1' of component 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+WARNING: [Synth 8-3819] Generic 'x_vector_size' not present in instantiated entity will be ignored [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'MAC__parameterized0' (4#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FIR' (5#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:06:04 ; elapsed = 01:07:13 . Memory (MB): peak = 1286.090 ; gain = 1156.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1286.090 ; gain = 2.816
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:06:49 ; elapsed = 01:12:40 . Memory (MB): peak = 1286.090 ; gain = 1156.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:7' bound to instance 'CU' of component 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+INFO: [Synth 8-4471] merging register 'rom_address_reg[2:0]' into 'ram_address_reg[2:0]' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (1#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:5' bound to instance 'RAM' of component 'mlab_ram' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram__parameterized0' (2#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:5' bound to instance 'ROM' of component 'mlab_rom' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom__parameterized0' (3#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd:15]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter x_vector_size bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:7' bound to instance 'MAC1' of component 'MAC' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'MAC__parameterized0' [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter coeff_width bound to: 8 - type: integer 
+	Parameter min_vector_size bound to: 8 - type: integer 
+WARNING: [Synth 8-3819] Generic 'x_vector_size' not present in instantiated entity will be ignored [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'MAC__parameterized0' (4#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FIR' (5#1) [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:06:50 ; elapsed = 01:12:41 . Memory (MB): peak = 1292.980 ; gain = 1163.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+
+Processing XDC Constraints
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1304.324 ; gain = 18.234
+launch_xsim -simset sim_1 -mode behavioral
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj xil_defaultlib.FIR_para_tb 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.MUL_unit [mul_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ADD_unit [add_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_paral [fir_paral_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_para_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_para_tb_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_para_tb_behav -key {Behavioral:sim_1:Functional:FIR_para_tb} -tclbatch {FIR_para_tb.tcl} -log {FIR_para_tb_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 50 ps  Iteration: 1  Process: /FIR_para_tb/UUT/ADD_1_up/line__18  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.891 ; gain = 75.566
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_para_tb_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1379.891 ; gain = 75.566
+set_property top FIR_TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 19 [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:15]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit fir_tb in library work failed.
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-91] ceil is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:20]
+ERROR: [VRFC 10-1083] near integer ; type conversion expression type cannot be determined uniquely [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:20]
+ERROR: [VRFC 10-91] data_width is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:28]
+ERROR: [VRFC 10-91] data_width is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:32]
+ERROR: [VRFC 10-1504] unit testbench ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:7]
+INFO: [VRFC 10-240] VHDL file C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-91] data_width is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:31]
+ERROR: [VRFC 10-91] data_width is not declared [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:35]
+ERROR: [VRFC 10-1504] unit testbench ignored due to previous errors [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd:10]
+INFO: [VRFC 10-240] VHDL file C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd ignored due to errors
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+ERROR: [VRFC 10-380] binding entity mac does not have generic x_vector_size [C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd:28]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit fir_tb in library work failed.
+ERROR: [Runs 36-25] xelab application returned error(s). Please see 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/xelab.log' file for more details.
+ERROR: [Common 17-69] Command failed: Failed to compile the design!
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mlab_ram [\mlab_ram(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.mlab_rom [\mlab_rom(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [\MAC(8,8,8)\]
+Compiling architecture behavioral of entity xil_defaultlib.FIR [\FIR(8,8,8)\]
+Compiling architecture testbench of entity xil_defaultlib.fir_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_TB_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_TB_behav -key {Behavioral:sim_1:Functional:FIR_TB} -tclbatch {FIR_TB.tcl} -log {FIR_TB_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_TB_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1396.535 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+WARNING: [Vivado 12-110] Failed to remove the dir 'C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav'. Please make sure that no other simulation session is running using the same simulation set.
+INFO: [Runs 36-130] *** Running xelab
+    with args "-m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB"
+Vivado Simulator 2014.2
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.2/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj xil_defaultlib.FIR_TB 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/MUL_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/ADD_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/FIR_paral.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_pipe_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sim_1/new/FIR_para_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2014.2/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.mlab_ram [\mlab_ram(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.mlab_rom [\mlab_rom(8)\]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [\MAC(8,8,8)\]
+Compiling architecture behavioral of entity xil_defaultlib.FIR [\FIR(8,8,8)\]
+Compiling architecture testbench of entity xil_defaultlib.fir_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot FIR_TB_behav
+INFO: [Runs 36-26] xelab completed.
+INFO: [Vivado 12-1390] *** Running xsim
+    with args "FIR_TB_behav -key {Behavioral:sim_1:Functional:FIR_TB} -tclbatch {FIR_TB.tcl} -log {FIR_TB_behav.log}"
+Vivado Simulator 2014.2
+Time resolution is 1 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1449.363 ; gain = 0.000
+INFO: [Vivado 12-1395] XSim completed. Design snapshot 'FIR_TB_behav' loaded.
+INFO: [Vivado 12-3703] XSim simulation ran for 1000ns
+launch_xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1449.363 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ps
+Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
+Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+INFO: [Simtcl 6-16] Simulation closed
+launch_xsim -simset sim_1 -mode behavioral
+ERROR: [Vivado 12-1501] Simulator for snapshot 'Behavioral:sim_1:Functional:FIR_TB' is already running. To launch simulation, change the snapshot name in the simulation fileset settings or close the current simulation.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
