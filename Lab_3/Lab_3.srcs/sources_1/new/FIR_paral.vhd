@@ -41,6 +41,11 @@ architecture Behavioral of FIR_paral is
     );
 end component;
 component ADD_unit is
+    generic(
+    data_width :   integer    := 8;
+    coeff_width:   integer    := 8;
+    min_vector_size: integer  := 8
+    );
     port(
     mul_res  : in std_logic_vector (data_width+coeff_width-1 downto 0);
     acc      : in std_logic_vector ((data_width + coeff_width + integer(ceil(log2(real(min_vector_size)))))-1 downto 0);

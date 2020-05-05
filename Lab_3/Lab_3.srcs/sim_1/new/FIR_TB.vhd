@@ -8,7 +8,8 @@ entity FIR_TB is
     end FIR_TB;
 
 architecture testbench of FIR_TB is
-constant data_width, coeff_width,min_vector_size : integer := 8;
+constant data_width, coeff_width : integer := 8;
+constant min_vector_size : integer := 8;
 component FIR
     generic(
     data_width :   integer    := 8;
@@ -97,6 +98,26 @@ TEST:
     wait for 7*CLKP;
     valid_in <='1';
     x<="00001000";
+    wait for CLKP;
+    valid_in <='0';
+    wait for 7*CLKP;
+    valid_in <='1';
+    x<="00001001";
+    wait for CLKP;
+    valid_in <='0';
+    wait for 7*CLKP;
+    valid_in <='1';
+    x<="00001010";
+    wait for CLKP;
+    valid_in <='0';
+    wait for 7*CLKP;
+    valid_in <='1';
+    x<="00001011";
+    wait for CLKP;
+    valid_in <='0';
+    wait for 7*CLKP;
+    valid_in <='1';
+    x<="00001100";
     wait for CLKP;
     valid_in <='0';
     wait for 7*CLKP;

@@ -8,7 +8,8 @@ entity FIR_para_tb is
 end FIR_para_tb;
 
 architecture Behavioral of FIR_para_tb is
-constant data_width, coeff_width,min_vector_size : integer := 8;
+constant data_width, coeff_width : integer := 8;
+constant min_vector_size : integer := 8;
 component FIR_paral is
       generic(
             data_width :   integer    := 8;
@@ -78,8 +79,14 @@ TEST:
              x_0 <="00000111";
              x_1 <="00001000";
              wait for CLKP;
-             x_0 <="00000000";
-             x_1 <="00000000";
+             x_0 <="00001001";
+             x_1 <="00001010";
+             wait for CLKP;
+             x_0 <="00001011";
+             x_1 <="00001100";
+             wait for CLKP;
+             x_0 <= "00000000";
+             x_1 <= "00000000";
              wait for 4*CLKP;
              valid_in <= '0';
              wait for 100*CLKP;   

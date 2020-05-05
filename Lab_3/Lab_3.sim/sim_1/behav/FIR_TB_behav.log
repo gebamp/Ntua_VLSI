@@ -12,15 +12,3 @@ Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand,
 Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
 Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
-Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
-Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
-Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd
-Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
-Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-Time: 0 ps  Iteration: 0  Process: /FIR_TB/UUT/ROM/line__29  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_rom.vhd
-Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-Time: 50 ps  Iteration: 1  Process: /FIR_TB/UUT/RAM/line__26  File: C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.srcs/sources_1/new/mlab_ram.vhd

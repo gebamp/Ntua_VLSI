@@ -8,7 +8,8 @@ entity FIR_pipe_tb is
 end FIR_pipe_tb;
 
 architecture Behavioral of FIR_pipe_tb is
-constant data_width, coeff_width,min_vector_size : integer := 8;
+constant data_width, coeff_width: integer := 8;
+constant min_vector_size : integer := 8;
 component FIR_PIPE is
       generic(
         data_width :   integer    := 8;
@@ -77,7 +78,15 @@ TEST:
              wait for CLKP;
              x <="00001000";
              wait for CLKP;
-              x <="00000000";
+             x <="00001001";
+             wait for CLKP;
+             x <="00001010";
+             wait for CLKP;                          
+             x <="00001011";
+             wait for CLKP;                          
+             x <="00001100";
+             wait for CLKP;                          
+             x <="00000000";
              wait for 7*CLKP; 
              valid_in <= '0';
              wait for 92*CLKP;   

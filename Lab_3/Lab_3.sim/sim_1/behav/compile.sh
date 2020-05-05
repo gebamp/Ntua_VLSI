@@ -32,4 +32,4 @@ ExecStep()
    fi
 }
 
-ExecStep xelab -m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_para_tb_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_para_tb.prj   xil_defaultlib.FIR_para_tb
+ExecStep xelab -m64 --debug typical --relax -L xil_defaultlib -L secureip --snapshot FIR_TB_behav --prj C:/Users/Superminiala/Documents/VLSI/Lab_3/Lab_3.sim/sim_1/behav/FIR_TB.prj   xil_defaultlib.FIR_TB
